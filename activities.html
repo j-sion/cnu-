@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="김민지의 프로젝트와 활동 목록">
+  <title>활동 | 김민지 Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="brand" href="index.html"><span>M</span> Minji.dev</a>
+      <button class="menu-toggle icon-button" type="button" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">소개</a>
+        <a class="active" href="activities.html">활동</a>
+        <button class="theme-toggle icon-button" type="button" aria-label="다크 모드 켜기">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container activities-main">
+    <section class="page-heading reveal">
+      <p class="eyebrow">ACTIVITIES</p>
+      <h1>배우고, 만들고,<br><span>함께 성장한 기록</span></h1>
+      <p>프로젝트와 커뮤니티 활동을 한곳에 모았습니다. 버튼으로 관심 있는 항목만 골라보세요.</p>
+    </section>
+
+    <div class="filter-bar reveal" role="group" aria-label="활동 필터">
+      <button class="filter-button active" data-filter="all">전체</button>
+      <button class="filter-button" data-filter="project">프로젝트</button>
+      <button class="filter-button" data-filter="community">커뮤니티</button>
+      <button class="filter-button" data-filter="study">스터디</button>
+    </div>
+
+    <section class="activity-grid" aria-live="polite">
+      <article class="activity-card material-card reveal" data-category="project">
+        <div class="card-top gradient-blue"><span>PROJECT</span><b>01</b></div>
+        <div class="card-content"><p class="card-meta">2025.03 — 2025.06</p><h2>모두의 습관</h2><p>작은 습관을 기록하고 친구와 응원하는 반응형 웹 서비스입니다.</p><div class="card-tags"><span>JavaScript</span><span>Firebase</span><span>UX</span></div><a href="#" aria-label="모두의 습관 자세히 보기">자세히 보기 →</a></div>
+      </article>
+      <article class="activity-card material-card reveal" data-category="project">
+        <div class="card-top gradient-purple"><span>PROJECT</span><b>02</b></div>
+        <div class="card-content"><p class="card-meta">2024.10 — 2024.12</p><h2>동네 책방 지도</h2><p>취향에 맞는 독립서점을 찾고 저장할 수 있는 지도 기반 서비스입니다.</p><div class="card-tags"><span>React</span><span>Map API</span><span>Figma</span></div><a href="#" aria-label="동네 책방 지도 자세히 보기">자세히 보기 →</a></div>
+      </article>
+      <article class="activity-card material-card reveal" data-category="community">
+        <div class="card-top gradient-orange"><span>COMMUNITY</span><b>03</b></div>
+        <div class="card-content"><p class="card-meta">2024.04 — 현재</p><h2>프론트엔드 밋업 운영</h2><p>매달 발표와 네트워킹을 준비하며 150명의 개발자 커뮤니티를 운영합니다.</p><div class="card-tags"><span>Community</span><span>Speaking</span></div><a href="#" aria-label="프론트엔드 밋업 자세히 보기">자세히 보기 →</a></div>
+      </article>
+      <article class="activity-card material-card reveal" data-category="study">
+        <div class="card-top gradient-green"><span>STUDY</span><b>04</b></div>
+        <div class="card-content"><p class="card-meta">2024.01 — 2024.03</p><h2>웹 접근성 스터디</h2><p>WCAG를 함께 읽고 실제 서비스의 접근성을 진단하며 개선안을 공유했습니다.</p><div class="card-tags"><span>A11y</span><span>WCAG</span><span>HTML</span></div><a href="#" aria-label="웹 접근성 스터디 자세히 보기">자세히 보기 →</a></div>
+      </article>
+      <article class="activity-card material-card reveal" data-category="community">
+        <div class="card-top gradient-pink"><span>COMMUNITY</span><b>05</b></div>
+        <div class="card-content"><p class="card-meta">2023.11</p><h2>오픈소스 첫 기여</h2><p>디자인 시스템 문서의 접근성 예제를 개선하고 번역에 참여했습니다.</p><div class="card-tags"><span>Open Source</span><span>Docs</span></div><a href="#" aria-label="오픈소스 기여 자세히 보기">자세히 보기 →</a></div>
+      </article>
+      <article class="activity-card material-card reveal" data-category="study">
+        <div class="card-top gradient-navy"><span>STUDY</span><b>06</b></div>
+        <div class="card-content"><p class="card-meta">2023.06 — 2023.09</p><h2>JavaScript Deep Dive</h2><p>언어의 핵심 개념을 실습하고 매주 기술 블로그에 학습 내용을 기록했습니다.</p><div class="card-tags"><span>JavaScript</span><span>Blog</span></div><a href="#" aria-label="자바스크립트 스터디 자세히 보기">자세히 보기 →</a></div>
+      </article>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><p>© <span id="year"></span> Minji Kim. Built with curiosity.</p><a href="#top">맨 위로 ↑</a></div></footer>
+</body>
+</html>
