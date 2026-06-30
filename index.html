@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="프론트엔드 개발자 김민지의 포트폴리오">
+  <title>김민지 | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <header class="site-header">
+    <nav class="nav container" aria-label="주요 메뉴">
+      <a class="brand" href="index.html" aria-label="홈으로 이동"><span>M</span> Minji.dev</a>
+      <button class="menu-toggle icon-button" type="button" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a class="active" href="index.html">소개</a>
+        <a href="activities.html">활동</a>
+        <button class="theme-toggle icon-button" type="button" aria-label="다크 모드 켜기">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>아이디어를 화면 위의<br><span>좋은 경험</span>으로 만듭니다.</h1>
+        <p class="hero-description">사용자와 비즈니스를 함께 이해하는 프론트엔드 개발자 김민지입니다. 단순하고 아름다운 인터페이스를 좋아합니다.</p>
+        <div class="button-group">
+          <a class="button button-primary" href="activities.html">활동 둘러보기 <span aria-hidden="true">→</span></a>
+          <a class="button button-secondary" href="mailto:minji@example.com">이메일 보내기</a>
+        </div>
+        <div class="social-links" aria-label="소셜 링크">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <span>·</span>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <span>·</span>
+          <a href="#about">About me</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="shape shape-one"></div>
+        <div class="shape shape-two"></div>
+        <div class="profile-card">
+          <div class="avatar">MJ</div>
+          <div class="profile-status"><span></span> Open to work</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>사람을 생각하며 만드는 개발자</h2>
+      </div>
+      <div class="about-grid">
+        <article class="material-card about-story reveal">
+          <p>새로운 기술을 배우고, 복잡한 문제를 명확한 인터페이스로 풀어내는 과정에서 즐거움을 느낍니다. 작은 디테일까지 놓치지 않는 태도로 완성도 높은 제품을 만듭니다.</p>
+          <p>동료와 투명하게 소통하고 빠르게 실험하며, 배운 것을 꾸준히 기록하고 나누고 있습니다.</p>
+        </article>
+        <div class="stats-grid reveal">
+          <div class="material-card stat"><strong>03+</strong><span>Years Experience</span></div>
+          <div class="material-card stat"><strong>12</strong><span>Projects</span></div>
+          <div class="material-card stat"><strong>08</strong><span>Tech Skills</span></div>
+          <div class="material-card stat"><strong>100%</strong><span>Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SKILLS</p>
+          <h2>제가 잘 다루는 도구들</h2>
+        </div>
+        <div class="chip-list reveal">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+          <span>TypeScript</span><span>Git</span><span>Figma</span><span>Web Accessibility</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Minji Kim. Built with curiosity.</p>
+      <a href="#top">맨 위로 ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
