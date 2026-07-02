@@ -18,7 +18,7 @@ portfolio/
 
 ## 2. 내 정보로 바꾸기
 
-1. `index.html`에서 `김민지`, 소개 문장, 이메일, SNS 주소를 수정합니다.
+1. `index.html`에서 `정시온`, 소개 문장, 이메일, SNS 주소를 수정합니다.
 2. `activities.html`에서 각 활동 카드의 기간, 제목, 설명, 기술을 수정합니다.
 3. `css/style.css`의 `:root`에서 `--primary` 색상을 바꾸면 전체 포인트 색상이 변경됩니다.
 
