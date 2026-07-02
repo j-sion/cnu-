@@ -73,6 +73,40 @@
       </div>
     </section>
 
+    <section class="section contact-section" id="contact">
+      <div class="contact-layout container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">CONTACT</p>
+          <h2>함께 만들고 싶은 것이 있나요?</h2>
+          <p class="contact-description">프로젝트 제안이나 궁금한 점을 남겨주세요. 작성한 내용은 Make 웹훅을 통해 자동으로 전달됩니다.</p>
+        </div>
+        <form class="contact-form material-card reveal" id="contact-form">
+          <div class="form-row">
+            <label>
+              <span>이름</span>
+              <input type="text" name="name" placeholder="홍길동" autocomplete="name" required>
+            </label>
+            <label>
+              <span>이메일</span>
+              <input type="email" name="email" placeholder="hello@example.com" autocomplete="email" required>
+            </label>
+          </div>
+          <label>
+            <span>메시지</span>
+            <textarea name="message" rows="5" placeholder="전하고 싶은 내용을 작성해주세요." required></textarea>
+          </label>
+          <label class="honeypot" aria-hidden="true">
+            <span>Website</span>
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </label>
+          <div class="form-footer">
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <button class="button button-primary submit-button" type="submit">메시지 보내기 <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section class="section skills-section">
       <div class="container">
         <div class="section-heading reveal">

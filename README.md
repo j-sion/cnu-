@@ -68,4 +68,14 @@ SSH 연결 확인:
 ssh -T git@github.com
 ```
 
+## 5. Make 웹훅 연동
+
+소개 페이지의 문의 폼은 `js/main.js`의 `WEBHOOK_URL`로 이름, 이메일, 메시지를 전송합니다.
+
+```javascript
+const WEBHOOK_URL = 'https://hook.us2.make.com/YOUR_WEBHOOK_ID';
+```
+
+Make 시나리오를 **ON**으로 설정한 뒤 폼을 제출하세요. 수신 필드는 `name`, `email`, `message`, `source`, `submittedAt`입니다.
+
 GitHub Pages는 저장소의 **Settings → Pages → Deploy from a branch → main / root**를 선택하면 배포할 수 있습니다.

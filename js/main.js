@@ -47,3 +47,49 @@ const revealObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: .08 });
 document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+
+const WEBHOOK_URL = 'https://hook.us2.make.com/81z93dakjmo317vmof54rkcf231wb3y3';
+const contactForm = document.querySelector('#contact-form');
+const formStatus = document.querySelector('#form-status');
+
+contactForm?.addEventListener('submit', async event => {
+  event.preventDefault();
+
+  const submitButton = contactForm.querySelector('.submit-button');
+  const formData = new FormData(contactForm);
+
+  // Bots often fill hidden fields. Pretend success without calling the webhook.
+  if (formData.get('website')) {
+    contactForm.reset();
+    return;
+  }
+
+  formData.delete('website');
+  formData.append('source', 'portfolio-website');
+  formData.append('submittedAt', new Date().toISOString());
+
+  submitButton.disabled = true;
+  submitButton.textContent = '전송 중...';
+  formStatus.className = 'form-status';
+  formStatus.textContent = '메시지를 전송하고 있습니다.';
+
+  try {
+    const response = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      body: formData
+    });
+
+    if (!response.ok) throw new Error(`Webhook error: ${response.status}`);
+
+    contactForm.reset();
+    formStatus.classList.add('success');
+    formStatus.textContent = '메시지가 전달되었습니다. 감사합니다!';
+  } catch (error) {
+    console.error(error);
+    formStatus.classList.add('error');
+    formStatus.textContent = '전송하지 못했습니다. 잠시 후 다시 시도해주세요.';
+  } finally {
+    submitButton.disabled = false;
+    submitButton.innerHTML = '메시지 보내기 <span aria-hidden="true">→</span>';
+  }
+});
